@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 신청 검토</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="notifications.html">←</a>
+    <div style="font-size:13px;font-weight:700;color:var(--text);">신청 검토</div>
+  </div>
+
+  <div class="screen" style="gap:11px;">
+    <div style="background:var(--green-light);border-radius:var(--radius-md);padding:12px 13px;display:flex;align-items:center;gap:10px;">
+      <div style="width:40px;height:40px;border-radius:11px;background:white;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🏫</div>
+      <div style="flex:1;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <div style="font-size:13px;font-weight:800;color:var(--green);">보라매 아동센터</div>
+          <div style="background:var(--green);color:white;font-size:8px;font-weight:700;padding:1px 6px;border-radius:10px;">인증기관</div>
+        </div>
+        <div style="font-size:10px;color:var(--green-mid);opacity:0.75;margin-top:2px;">아동·청소년 복지 · 서울 동작구</div>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-section-title">신청 내용</div>
+      <div style="padding:0 14px 10px;display:flex;flex-direction:column;gap:0;">
+        <div class="info-row"><span style="font-size:10px;color:var(--text-sub);">신청 품목</span><span style="font-size:11px;font-weight:700;">재고 도서</span></div>
+        <div class="info-row"><span style="font-size:10px;color:var(--text-sub);">신청 수량</span><span style="font-size:11px;font-weight:700;">500권</span></div>
+        <div class="info-row"><span style="font-size:10px;color:var(--text-sub);">수령 방법</span><span style="font-size:11px;font-weight:700;">방문 픽업</span></div>
+        <div class="info-row"><span style="font-size:10px;color:var(--text-sub);">희망 수령일</span><span style="font-size:11px;font-weight:700;">2026. 03. 28</span></div>
+        <div class="info-row" style="align-items:flex-start;padding-top:10px;">
+          <span style="font-size:10px;color:var(--text-sub);flex-shrink:0;padding-right:10px;">신청 메시지</span>
+          <span style="font-size:10.5px;color:var(--text);text-align:right;line-height:1.6;">아동 학습용으로 활용 예정입니다. 초등학교 수준 교재 위주로 부탁드려요.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:white;border:0.5px solid var(--border);border-radius:var(--radius-md);padding:11px 13px;">
+      <div style="font-size:10px;font-weight:700;color:var(--text);margin-bottom:7px;">📦 내 물품 현황</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div style="font-size:10px;color:var(--text-sub);">현재 잔여 수량</div>
+        <div style="font-size:13px;font-weight:800;color:var(--text);">1,200권</div>
+      </div>
+      <div style="height:6px;background:var(--bg);border-radius:3px;margin-top:6px;overflow:hidden;"><div style="height:100%;width:42%;background:var(--green-accent);border-radius:3px;"></div></div>
+      <div style="font-size:9px;color:var(--text-hint);margin-top:3px;">신청 수량 500권 제공 시 700권 남음</div>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:8px;">
+      <button class="big-btn btn-out" style="flex:1;height:44px;border:1.5px solid #E24B4A;color:#E24B4A;" data-open-sheet="reject-sheet">거절하기</button>
+      <a class="big-btn btn-yel" style="flex:2;height:44px;" href="application-approved.html">승인하기 ✓</a>
+    </div>
+  </div>
+
+  <div class="sheet-overlay" id="reject-sheet">
+    <div class="sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title">거절 사유를 선택해주세요</div>
+      <div class="sheet-options">
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">요청 수량이 현재 보유량을 초과해요</span></button>
+        <button class="sheet-opt selected"><span class="sheet-radio"></span><span class="sheet-opt-label">물량 조건이 맞지 않아요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">픽업 일정이 맞지 않아요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">이미 다른 기관에 배정했어요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label" style="color:var(--text-hint);">직접 입력</span></button>
+      </div>
+      <div class="sheet-cta">
+        <button class="cancel" data-close-sheet>취소</button>
+        <a class="confirm" href="application-rejected.html">거절 확인</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

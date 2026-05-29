@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 영수증 조회</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="my-donations.html">←</a>
+    <div class="back-title">영수증 조회</div>
+  </div>
+
+  <div class="screen" style="padding-top:0;">
+    <div class="summary-bar">
+      <div><div class="sb-label">2026년 기부 총액</div><div class="sb-value">4,000,000원</div></div>
+      <div class="sb-divider"></div>
+      <div><div class="sb-label">발급 완료</div><div class="sb-value" style="color:var(--green-accent);">1건</div></div>
+      <div class="sb-divider"></div>
+      <div><div class="sb-label">발급 대기</div><div class="sb-value" style="color:white;">2건</div></div>
+    </div>
+
+    <div class="chips" data-chip-group="year">
+      <div class="chip on">2026년</div>
+      <div class="chip">2025년</div>
+      <div class="chip">2024년</div>
+    </div>
+
+    <div class="receipt-card">
+      <div class="rc-head">
+        <div class="rc-icon">🧾</div>
+        <div class="rc-info"><div class="rc-name">재고 도서 2,000권</div><div class="rc-meta">인천 보라매 아동센터 · 2026. 2. 10</div></div>
+        <div class="pill pg">발급 완료</div>
+      </div>
+      <div class="rc-body">
+        <div class="rc-row"><div class="rc-lbl">기부 물품 시가</div><div class="rc-val">40,000,000원</div></div>
+        <div class="rc-row"><div class="rc-lbl">세제 혜택 (법인세)</div><div class="rc-val" style="color:var(--green-mid);font-weight:800;">약 4,000,000원</div></div>
+        <div class="rc-row"><div class="rc-lbl">영수증 번호</div><div class="rc-val" style="font-size:10px;color:var(--text-hint);">#RCP-20260210-001</div></div>
+        <div class="rc-row"><div class="rc-lbl">발급일</div><div class="rc-val">2026. 2. 14</div></div>
+      </div>
+      <div class="rc-foot"><a class="cbtn out" href="receipt-preview.html">미리보기</a><a class="cbtn grn" href="receipt-preview.html">📥 PDF 다운로드</a></div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:6px;padding:4px 2px;">
+      <div style="height:0.5px;flex:1;background:var(--border);"></div>
+      <div style="font-size:10px;color:var(--text-hint);white-space:nowrap;">발급 대기 중 (2건)</div>
+      <div style="height:0.5px;flex:1;background:var(--border);"></div>
+    </div>
+
+    <div class="receipt-pending">
+      <div class="rc-head" style="border-bottom:0.5px solid var(--border);">
+        <div class="rc-icon" style="background:#F5F5F3;font-size:16px;">⏳</div>
+        <div class="rc-info"><div class="rc-name">호텔 뷔페 잉여 음식</div><div class="rc-meta">보라매 아동센터 · 결제 완료 후 발급</div></div>
+        <div class="pill py">결제 대기</div>
+      </div>
+      <div class="rc-body"><div class="rc-row"><div class="rc-lbl">예상 세제 혜택</div><div class="rc-val" style="color:var(--text-hint);">약 1,500,000원</div></div></div>
+    </div>
+
+    <div class="receipt-pending">
+      <div class="rc-head">
+        <div class="rc-icon" style="background:#F5F5F3;font-size:16px;">📦</div>
+        <div class="rc-info"><div class="rc-name">미개봉 화장품 세트</div><div class="rc-meta">매칭 기관 확정 후 발급</div></div>
+        <div class="pill pgr">매칭 중</div>
+      </div>
+    </div>
+
+    <div class="notice">💡 영수증은 기부 완료(수혜 기관 수령 확인) 후 평균 3~5 영업일 내 자동 발급됩니다. 발급 시 이메일로 안내드려요.</div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><div class="nav-icon-wrap">🏠</div><div class="nav-label">홈</div></a>
+    <a class="nav-item" href="my-donations.html"><div class="nav-icon-wrap">📦</div><div class="nav-label">내 기부</div></a>
+    <a class="nav-item" href="chat-list.html"><div class="nav-icon-wrap">💬</div><div class="nav-label">채팅</div></a>
+    <a class="nav-item active" href="esg.html"><div class="nav-icon-wrap">📊</div><div class="nav-label">리포트</div></a>
+    <a class="nav-item" href="profile.html"><div class="nav-icon-wrap">👤</div><div class="nav-label">내 정보</div></a>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 결제하기</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="payment-quote.html">←</a>
+    <div class="back-title">결제하기</div>
+  </div>
+
+  <div class="step-bar">
+    <div class="step-node"><div class="step-dot sd-done">✓</div><div class="step-lbl">등록</div></div>
+    <div class="step-line sl-d"></div>
+    <div class="step-node"><div class="step-dot sd-done">✓</div><div class="step-lbl">매칭</div></div>
+    <div class="step-line sl-d"></div>
+    <div class="step-node"><div class="step-dot sd-done">✓</div><div class="step-lbl">견적확인</div></div>
+    <div class="step-line sl-d"></div>
+    <div class="step-node"><div class="step-dot sd-active">4</div><div class="step-lbl on">결제</div></div>
+  </div>
+
+  <div class="screen">
+    <div style="background:var(--bg);border-radius:var(--radius-md);padding:12px;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-size:11px;color:var(--text-sub);">최종 결제금액</div>
+      <div style="font-size:18px;font-weight:800;color:var(--text);letter-spacing:-0.5px;">550,000원</div>
+    </div>
+
+    <div>
+      <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:8px;">결제 수단 선택</div>
+      <div style="display:flex;flex-direction:column;gap:6px;" data-pay-group="payment">
+        <div class="pay-method on">
+          <div class="pm-ico">🏢</div>
+          <div style="flex:1;"><div class="pm-name">계좌이체 (법인)</div><div class="pm-sub">법인 계좌에서 바로 이체</div></div>
+          <div class="pm-radio on"></div>
+        </div>
+        <div class="pay-method">
+          <div class="pm-ico">💳</div>
+          <div style="flex:1;"><div class="pm-name">법인카드</div><div class="pm-sub">Visa, Master, 국내 법인카드</div></div>
+          <div class="pm-radio"></div>
+        </div>
+        <div class="pay-method">
+          <div class="pm-ico">🧾</div>
+          <div style="flex:1;"><div class="pm-name">세금계산서 발행</div><div class="pm-sub">후불 세금계산서 + 계좌이체</div></div>
+          <div class="pm-radio"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#FFF0F0;border:0.5px solid rgba(192,57,43,0.15);border-radius:var(--radius-sm);padding:10px 12px;font-size:10px;color:#C0392B;line-height:1.5;">
+      ⚠ 결제 완료 후 픽업이 확정됩니다. 기부 완료 시 법인세 감면용 영수증이 자동 발행됩니다.
+    </div>
+
+    <a class="big-btn btn-yel" style="margin-top:auto;" href="payment-complete.html">550,000원 결제하기</a>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 기부 제안</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="need-detail.html">←</a>
+    <div style="font-size:13px;font-weight:700;color:var(--text);">기부 제안하기</div>
+  </div>
+
+  <div class="screen" style="gap:11px;">
+    <div style="background:var(--green-light);border-radius:var(--radius-md);padding:11px 13px;display:flex;align-items:center;gap:10px;">
+      <div style="width:36px;height:36px;border-radius:9px;background:white;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;">🏫</div>
+      <div>
+        <div style="font-size:12px;font-weight:700;color:var(--green);">보라매 아동센터</div>
+        <div style="font-size:10px;color:var(--green-mid);opacity:0.75;margin-top:1px;">급식용 식품 필요 · 아동 50명 · D-3</div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label field-required">제안할 물품</div>
+      <div class="field-input selected" style="justify-content:space-between;">
+        <span>뷔페 잉여 음식 (신선 식품)</span>
+        <span style="color:var(--text-hint);">▾</span>
+      </div>
+      <div class="field-hint">내 등록 물품 중 선택하거나 새로 입력할 수 있어요</div>
+    </div>
+
+    <div class="field">
+      <div class="field-label field-required">제공 가능 수량</div>
+      <div style="display:flex;gap:6px;">
+        <input class="field-input" style="flex:2;font-size:14px;font-weight:700;" value="10" />
+        <div class="field-input" style="flex:1;justify-content:space-between;">kg <span style="color:var(--text-hint);">▾</span></div>
+      </div>
+      <div class="field-hint ok">✓ 기관 필요량 30kg 중 제공 가능한 수량을 입력해주세요</div>
+    </div>
+
+    <div class="field" data-delivery-group="proposal">
+      <div class="field-label">전달 방법</div>
+      <div style="display:flex;gap:6px;">
+        <button data-delivery="pickup" style="flex:1;height:34px;border-radius:var(--radius-sm);border:1.5px solid var(--yellow);background:var(--yellow-light);font-size:10px;font-weight:700;color:var(--yellow-dark);cursor:pointer;">🚗 방문 픽업</button>
+        <button data-delivery="deliver" style="flex:1;height:34px;border-radius:var(--radius-sm);border:0.5px solid var(--border-mid);background:white;font-size:10px;font-weight:600;color:var(--text-sub);cursor:pointer;">🚚 직접 배달</button>
+        <button data-delivery="parcel" style="flex:1;height:34px;border-radius:var(--radius-sm);border:0.5px solid var(--border-mid);background:white;font-size:10px;font-weight:600;color:var(--text-sub);cursor:pointer;">📦 택배</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-label">기관 담당자에게 전할 메시지 <span style="font-size:9px;font-weight:400;">(선택)</span></div>
+      <textarea class="field-input" placeholder="메시지를 입력하세요">당일 섭취 권장 식품이라 픽업 후 바로 사용 부탁드려요. 오전 10시~12시 사이 픽업 가능합니다.</textarea>
+    </div>
+
+    <div class="notice">
+      📋 제안 전달 후 기관 담당자가 수락하면 매칭이 확정돼요. 평균 <strong>1~2 영업일</strong> 내 결과를 알려드려요.
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:auto;">
+      <a class="big-btn btn-out" style="flex:1;font-size:12px;" href="need-detail.html">취소</a>
+      <a class="big-btn btn-yel" style="flex:2;" href="proposal-complete.html">제안 보내기 →</a>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

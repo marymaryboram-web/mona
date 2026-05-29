@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 기부 상세</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="my-donations-list.html">←</a>
+    <div class="back-title">기부 상세</div>
+  </div>
+
+  <div class="screen" style="padding-top:0;">
+    <div style="background:var(--green);border-radius:var(--radius-lg);padding:14px 16px;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-18px;right:-18px;width:80px;height:80px;background:rgba(245,200,0,0.1);border-radius:50%;"></div>
+      <div style="font-size:9px;color:rgba(255,255,255,0.5);margin-bottom:3px;">#DON-20260322 · 신선 식품</div>
+      <div style="font-size:16px;font-weight:800;color:white;margin-bottom:8px;letter-spacing:-0.3px;">호텔 뷔페 잉여 음식</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <div><div style="font-size:9px;color:rgba(255,255,255,0.5);">수량</div><div style="font-size:13px;font-weight:700;color:white;">10kg</div></div>
+        <div style="width:1px;background:rgba(255,255,255,0.15);"></div>
+        <div><div style="font-size:9px;color:rgba(255,255,255,0.5);">픽업 예정일</div><div style="font-size:13px;font-weight:700;color:white;">2026. 3. 25</div></div>
+        <div style="width:1px;background:rgba(255,255,255,0.15);"></div>
+        <div><div style="font-size:9px;color:rgba(255,255,255,0.5);">수혜 기관</div><div style="font-size:13px;font-weight:700;color:var(--yellow);">보라매 아동센터</div></div>
+      </div>
+    </div>
+
+    <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-md);padding:13px 14px;">
+      <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:12px;">📋 진행 현황</div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot done">✓</div><div class="tl-line done"></div></div><div class="tl-content"><div class="tl-title">기부 등록 완료</div><div class="tl-date">2026. 3. 22 오후 2:30</div></div></div>
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot done">✓</div><div class="tl-line done"></div></div><div class="tl-content"><div class="tl-title">AI 매칭 완료</div><div class="tl-date">2026. 3. 22 오후 5:14 · 보라매 아동센터</div></div></div>
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot active">!</div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title" style="color:var(--yellow-dark);">결제 대기 중</div><div class="tl-date">견적서 확인 후 결제해주세요</div></div></div>
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot idle">4</div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title idle">픽업 확정</div><div class="tl-date">결제 완료 후 확정됩니다</div></div></div>
+        <div class="tl-item"><div class="tl-left"><div class="tl-dot idle">5</div></div><div class="tl-content" style="padding-bottom:0;"><div class="tl-title idle">기부 완료 🎉</div><div class="tl-date">영수증 · ESG 리포트 발행</div></div></div>
+      </div>
+    </div>
+
+    <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-md);overflow:hidden;">
+      <div style="padding:9px 13px;background:var(--bg);border-bottom:0.5px solid var(--border);font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:0.4px;">물품 상세 정보</div>
+      <div style="padding:10px 13px;display:flex;flex-direction:column;gap:6px;">
+        <div class="dc-row"><div class="dc-lbl">카테고리</div><div class="dc-val">🥗 신선 식품</div></div>
+        <div class="dc-row"><div class="dc-lbl">제조원가</div><div class="dc-val">550,000원</div></div>
+        <div class="dc-row"><div class="dc-lbl">픽업 주소</div><div class="dc-val" style="text-align:right;max-width:160px;font-size:10px;">서울 강남구 테헤란로 123 (B1)</div></div>
+        <div class="dc-row"><div class="dc-lbl">세금계산서</div><div class="dc-val">발행 요청</div></div>
+        <div class="dc-row"><div class="dc-lbl">예상 세제혜택</div><div class="dc-val" style="color:var(--green-mid);">약 1,500,000원</div></div>
+      </div>
+    </div>
+
+    <a class="big-btn btn-yel" href="payment-quote.html">견적서 확인하고 결제하기 →</a>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><div class="nav-icon-wrap">🏠</div><div class="nav-label">홈</div></a>
+    <a class="nav-item active" href="my-donations.html"><div class="nav-icon-wrap">📦</div><div class="nav-label">내 기부</div></a>
+    <a class="nav-item" href="chat-list.html"><div class="nav-icon-wrap">💬</div><div class="nav-label">채팅</div></a>
+    <a class="nav-item" href="esg.html"><div class="nav-icon-wrap">📊</div><div class="nav-label">리포트</div></a>
+    <a class="nav-item" href="profile.html"><div class="nav-icon-wrap">👤</div><div class="nav-label">내 정보</div></a>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

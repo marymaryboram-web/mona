@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — ESG 리포트</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="app-header">
+    <div class="logo-row"><div class="logo-badge">M</div><span class="logo-text">MONA</span></div>
+    <div class="header-icons"><a class="icon-btn" href="notifications.html">🔔</a></div>
+  </div>
+
+  <div class="screen" style="padding-top:6px;">
+    <div class="esg-hero">
+      <div class="esg-top">
+        <div>
+          <div class="esg-top-lbl">2026 누적 ESG 임팩트</div>
+          <div class="esg-top-title">기후 데이터<br>성과 현황</div>
+        </div>
+        <div class="esg-badge">ISSB · GRI</div>
+      </div>
+      <div class="esg-metrics">
+        <div class="esg-m"><div class="esg-mv">125kg</div><div class="esg-ml">탄소 감축</div></div>
+        <div class="esg-m"><div class="esg-mv">10kg</div><div class="esg-ml">폐기물 절감</div></div>
+        <div class="esg-m"><div class="esg-mv">630명</div><div class="esg-ml">수혜자</div></div>
+      </div>
+    </div>
+
+    <div class="esg-sec">
+      <div class="esg-sec-head"><div class="esg-sec-title">📈 성과 지표 (LCA 기반)</div></div>
+      <div class="esg-body">
+        <div class="bar-row"><div class="bar-info"><div class="bar-lbl">탄소 감축량 (kgCO₂e)</div><div class="bar-val">125kg</div></div><div class="bar-track"><div class="bar-fill bf-c" style="width:62%"></div></div></div>
+        <div class="bar-row"><div class="bar-info"><div class="bar-lbl">폐기물 절감 (kg)</div><div class="bar-val">10kg</div></div><div class="bar-track"><div class="bar-fill bf-w" style="width:20%"></div></div></div>
+        <div class="bar-row"><div class="bar-info"><div class="bar-lbl">사회적 가치 (KRW)</div><div class="bar-val">₩7,000,000</div></div><div class="bar-track"><div class="bar-fill bf-s" style="width:45%"></div></div></div>
+      </div>
+    </div>
+
+    <div class="esg-sec">
+      <div class="esg-sec-head"><div class="esg-sec-title">🌐 글로벌 기준 준수</div></div>
+      <div class="comp-row"><div class="comp-lbl">ISSB 국제 지속가능성 기준</div><div class="comp-badge cb-pass">준수</div></div>
+      <div class="comp-row"><div class="comp-lbl">GRI 글로벌 보고 이니셔티브</div><div class="comp-badge cb-pass">준수</div></div>
+      <div class="comp-row"><div class="comp-lbl">ISO 14040 (LCA 기반)</div><div class="comp-badge cb-pass">준수</div></div>
+      <div class="comp-row"><div class="comp-lbl">Scope 3 탄소 저감 리포트</div><div class="comp-badge cb-pend">생성 중</div></div>
+    </div>
+
+    <div class="sec-hd"><div class="sec-title">건별 ESG 리포트</div><div class="sec-count">완료 1건 · 대기 2건</div></div>
+
+    <div class="esg-card">
+      <div class="ec-head">
+        <div class="ec-icon">📚</div>
+        <div style="flex:1;">
+          <div class="ec-title">재고 도서 2,000권</div>
+          <div class="ec-meta">인천 보라매 아동센터 · 2026. 2. 10 완료</div>
+          <div style="margin-top:3px;"><span class="pill pg">리포트 발행 완료</span></div>
+        </div>
+      </div>
+      <div class="ec-divider"></div>
+      <div class="ec-metrics">
+        <div class="ec-metric"><div class="ec-m-val">125kg</div><div class="ec-m-lbl">탄소 감축<br>CO₂e</div></div>
+        <div class="ec-metric"><div class="ec-m-val">₩7M</div><div class="ec-m-lbl">사회적<br>가치</div></div>
+        <div class="ec-metric"><div class="ec-m-val">630명</div><div class="ec-m-lbl">수혜자</div></div>
+      </div>
+      <div class="ec-foot">
+        <a class="cbtn out" href="esg-detail.html">상세 보기</a>
+        <button class="cbtn grn">📥 PDF 다운로드</button>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:6px;">
+      <div style="height:0.5px;flex:1;background:var(--border);"></div>
+      <div style="font-size:10px;color:var(--text-hint);white-space:nowrap;">리포트 생성 대기 (2건)</div>
+      <div style="height:0.5px;flex:1;background:var(--border);"></div>
+    </div>
+
+    <div class="esg-pending-card"><div class="epc-icon">⏳</div><div style="flex:1;"><div style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px;">호텔 뷔페 잉여 음식</div><div style="font-size:10px;color:var(--text-hint);">결제 완료 후 리포트 자동 생성</div></div><div class="pill py">결제 대기</div></div>
+    <div class="esg-pending-card"><div class="epc-icon">🤖</div><div style="flex:1;"><div style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px;">미개봉 화장품 세트</div><div style="font-size:10px;color:var(--text-hint);">기부 완료 후 리포트 자동 생성</div></div><div class="pill pb">AI 매칭 중</div></div>
+
+    <div class="notice">📋 ESG 리포트는 기부 완료 후 LCA 기반으로 자동 생성됩니다. ISSB · GRI 국제 기준에 맞춰 발행되며, 기업 지속가능경영 보고서에 활용 가능합니다.</div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><div class="nav-icon-wrap">🏠</div><div class="nav-label">홈</div></a>
+    <a class="nav-item" href="my-donations.html"><div class="nav-icon-wrap">📦</div><div class="nav-label">내 기부</div></a>
+    <a class="nav-item" href="chat-list.html"><div class="nav-icon-wrap">💬</div><div class="nav-label">채팅</div></a>
+    <a class="nav-item active" href="esg.html"><div class="nav-icon-wrap">📊</div><div class="nav-label">리포트</div></a>
+    <a class="nav-item" href="profile.html"><div class="nav-icon-wrap">👤</div><div class="nav-label">내 정보</div></a>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

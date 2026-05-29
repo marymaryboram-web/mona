@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 내 기부 목록</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="my-donations.html">←</a>
+    <div class="back-title">내 기부 목록</div>
+    <div class="back-sub">총 3건</div>
+  </div>
+
+  <div class="screen" style="padding-top:0;">
+    <div class="summary-bar">
+      <div><div class="sb-label">전체 기부 건수</div><div class="sb-value">3건</div></div>
+      <div class="sb-divider"></div>
+      <div><div class="sb-label">완료</div><div class="sb-value" style="color:var(--green-accent);">1건</div></div>
+      <div class="sb-divider"></div>
+      <div><div class="sb-label">진행중</div><div class="sb-value" style="color:white;">2건</div></div>
+    </div>
+
+    <div class="chips" data-chip-group="status">
+      <div class="chip on">전체</div>
+      <div class="chip">결제대기</div>
+      <div class="chip">픽업대기</div>
+      <div class="chip">진행중</div>
+      <div class="chip">완료</div>
+    </div>
+
+    <div class="d-card highlight">
+      <div class="dc-head hl-bg">
+        <div class="dc-thumb" style="background:var(--yellow-light);">🥗</div>
+        <div class="dc-info"><div class="dc-name">호텔 뷔페 잉여 음식</div><div class="dc-meta">2026. 3. 22 등록 · 10kg</div></div>
+        <div class="pill pr">결제 필요</div>
+      </div>
+      <div class="dc-body">
+        <div class="dc-row"><div class="dc-lbl">서비스 수수료</div><div class="dc-val" style="color:var(--yellow-dark);font-weight:800;">550,000원</div></div>
+        <div class="dc-row"><div class="dc-lbl">픽업 예정일</div><div class="dc-val">2026. 3. 25</div></div>
+        <div class="dc-row"><div class="dc-lbl">매칭 기관</div><div class="dc-val">보라매 아동센터</div></div>
+      </div>
+      <div class="dc-foot"><a class="cbtn out" href="donation-detail.html">상세보기</a><a class="cbtn yel" href="payment-quote.html">지금 결제하기 →</a></div>
+    </div>
+
+    <div class="d-card active-match">
+      <div class="dc-head match-bg">
+        <div class="dc-thumb" style="background:var(--green-light);">🧴</div>
+        <div class="dc-info"><div class="dc-name">미개봉 화장품 세트</div><div class="dc-meta">2026. 3. 18 등록 · 500개</div></div>
+        <div class="pill pb">AI 매칭 중</div>
+      </div>
+      <div class="dc-body">
+        <div class="dc-row"><div class="dc-lbl">카테고리</div><div class="dc-val">💄 화장품·뷰티</div></div>
+        <div class="dc-row"><div class="dc-lbl">픽업 희망일</div><div class="dc-val">2026. 4. 1</div></div>
+        <div class="dc-row"><div class="dc-lbl">제조원가</div><div class="dc-val">12,000,000원</div></div>
+      </div>
+      <div class="dc-foot"><a class="cbtn out" href="donation-detail.html">상세보기</a><a class="cbtn grn-outline" href="donation-detail.html">매칭 현황 →</a></div>
+    </div>
+
+    <div class="d-card">
+      <div class="dc-head">
+        <div class="dc-thumb" style="background:var(--bg);">📚</div>
+        <div class="dc-info"><div class="dc-name">재고 도서 2,000권</div><div class="dc-meta">2026. 2. 10 등록 · 완료</div></div>
+        <div class="pill pg">기부 완료</div>
+      </div>
+      <div class="dc-body">
+        <div class="dc-row"><div class="dc-lbl">수혜 기관</div><div class="dc-val">인천 보라매 아동센터</div></div>
+        <div class="dc-row"><div class="dc-lbl">탄소 절감</div><div class="dc-val" style="color:var(--green-mid);">125kg CO₂e</div></div>
+        <div class="dc-row"><div class="dc-lbl">세제 혜택</div><div class="dc-val" style="color:var(--green-mid);">약 4,000,000원</div></div>
+      </div>
+      <div class="dc-foot"><a class="cbtn out" href="esg-detail.html">ESG 리포트</a><a class="cbtn grn" href="receipt-preview.html">영수증 보기</a></div>
+    </div>
+
+    <a style="background:var(--white);border:1.5px dashed var(--border-mid);border-radius:var(--radius-md);padding:13px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;cursor:pointer;text-decoration:none;color:inherit;" href="index.html">
+      <div style="font-size:17px;">➕</div>
+      <div style="font-size:11px;font-weight:700;color:var(--text);">새 기부 등록하기</div>
+      <div style="font-size:10px;color:var(--text-sub);">잉여 자원을 기부로 전환해요</div>
+    </a>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item" href="index.html"><div class="nav-icon-wrap">🏠</div><div class="nav-label">홈</div></a>
+    <a class="nav-item active" href="my-donations.html"><div class="nav-icon-wrap">📦</div><div class="nav-label">내 기부</div></a>
+    <a class="nav-item" href="chat-list.html"><div class="nav-icon-wrap">💬</div><div class="nav-label">채팅</div></a>
+    <a class="nav-item" href="esg.html"><div class="nav-icon-wrap">📊</div><div class="nav-label">리포트</div></a>
+    <a class="nav-item" href="profile.html"><div class="nav-icon-wrap">👤</div><div class="nav-label">내 정보</div></a>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

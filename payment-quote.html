@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 견적서 확인</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="status-bar">9:41 <span>●●●</span></div>
+  <div class="back-hd">
+    <a class="back-btn" href="donation-detail.html">←</a>
+    <div class="back-title">견적서 확인</div>
+  </div>
+
+  <div class="step-bar">
+    <div class="step-node"><div class="step-dot sd-done">✓</div><div class="step-lbl">등록</div></div>
+    <div class="step-line sl-d"></div>
+    <div class="step-node"><div class="step-dot sd-done">✓</div><div class="step-lbl">매칭</div></div>
+    <div class="step-line sl-d"></div>
+    <div class="step-node"><div class="step-dot sd-active">3</div><div class="step-lbl on">견적확인</div></div>
+    <div class="step-line sl-i"></div>
+    <div class="step-node"><div class="step-dot sd-idle">4</div><div class="step-lbl">결제</div></div>
+  </div>
+
+  <div class="screen">
+    <div style="background:var(--green-light);border-radius:var(--radius-md);padding:10px 12px;display:flex;align-items:center;gap:8px;">
+      <div style="font-size:15px;">🤝</div>
+      <div style="font-size:11px;font-weight:600;color:var(--green-mid);line-height:1.4;">수혜 기관 매칭이 완료됐어요!<br><span style="font-weight:400;opacity:0.8;">견적서를 확인하고 수락해주세요</span></div>
+    </div>
+
+    <div class="quote-box">
+      <div class="qb-title">견적서 상세</div>
+      <div class="qb-row"><div class="qb-lbl">기부 물품</div><div class="qb-val">뷔페 잉여 음식 10kg</div></div>
+      <div class="qb-row"><div class="qb-lbl">수혜 기관</div><div class="qb-val">보라매 아동센터</div></div>
+      <div class="qb-row"><div class="qb-lbl">픽업 예정일</div><div class="qb-val">2026. 3. 25</div></div>
+      <div class="qb-div"></div>
+      <div class="qb-row"><div class="qb-lbl">기본 수수료</div><div class="qb-val">500,000원</div></div>
+      <div class="qb-row"><div class="qb-lbl">물류비</div><div class="qb-val">50,000원</div></div>
+      <div class="qb-row"><div class="qb-lbl">할인</div><div class="qb-val" style="color:var(--green-accent);">-0원</div></div>
+      <div class="qb-div"></div>
+      <div class="qb-row"><div class="qb-total-lbl">최종 결제금액</div><div class="qb-total-val">550,000원</div></div>
+    </div>
+
+    <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-md);padding:10px 12px;">
+      <div style="font-size:11px;font-weight:700;color:var(--text);margin-bottom:5px;">🧮 세제 혜택 예상액</div>
+      <div style="font-size:10px;color:var(--text-sub);line-height:1.6;">기부 완료 시 법인세 감면 혜택<br>예상 세제 혜택 <span style="font-weight:700;color:var(--green-mid);">약 1,500,000원</span> (물품 시가 기준)</div>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:auto;">
+      <button class="big-btn btn-out" style="flex:1;height:40px;" data-open-sheet="reject-sheet">거절하기</button>
+      <a class="big-btn btn-yel" style="flex:2;" href="payment-method.html">수락하고 결제 →</a>
+    </div>
+  </div>
+
+  <!-- 거절 사유 바텀시트 -->
+  <div class="sheet-overlay" id="reject-sheet">
+    <div class="sheet">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title">거절 사유를 선택해주세요</div>
+      <div class="sheet-options">
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">수혜 기관이 맞지 않아요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">수거/배달 일정이 맞지 않아요</span></button>
+        <button class="sheet-opt selected"><span class="sheet-radio"></span><span class="sheet-opt-label">물량 조건이 맞지 않아요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label">내부 사정으로 기부가 어려워졌어요</span></button>
+        <button class="sheet-opt"><span class="sheet-radio"></span><span class="sheet-opt-label" style="color:var(--text-hint);">직접 입력</span></button>
+      </div>
+      <div class="sheet-cta">
+        <button class="cancel" data-close-sheet>취소</button>
+        <a class="confirm" href="payment-rejected.html">거절 확인</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
