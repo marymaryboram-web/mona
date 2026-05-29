@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1B4332">
+<title>MONA — 홈</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <div class="status-bar">9:41 <span>●●●</span></div>
+
+  <div class="app-header">
+    <div class="logo-row"><div class="logo-badge">M</div><span class="logo-text">MONA</span></div>
+    <div class="header-icons">
+      <button class="icon-btn">🔍</button>
+      <a class="icon-btn" href="notifications.html">🔔<div class="notif-badge">1</div></a>
+    </div>
+  </div>
+
+  <div class="top-tab-bar" data-tab-group="home">
+    <button class="top-tab active" data-tab="donate">기부해요</button>
+    <button class="top-tab" data-tab="need">필요해요</button>
+  </div>
+
+  <!-- 기부해요 패널 -->
+  <div data-tab-panel="donate" data-tab-group-panel="home" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
+    <div class="search-bar">🔍&nbsp; 어떤 물품을 찾으시나요?</div>
+    <div class="sort-row">
+      <div style="font-size:10px;color:var(--text-hint);">전체 12건</div>
+      <button class="sort-btn">최신순 ▾</button>
+    </div>
+    <div class="feed-wrap">
+      <div class="feed-list">
+        <a class="feed-item" href="product-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:rgba(0,0,0,0.45);color:white;">D-30</div></div>
+          <div class="feed-info">
+            <div class="feed-title">재고 도서</div>
+            <div class="feed-meta"><span>한국NVC출판사</span><div class="meta-dot"></div><span>5시간 전</span></div>
+            <div class="feed-qty">2,000권 · 4,000만원</div>
+            <div class="feed-tags"><span class="tag tgr">📚 도서·문구</span><span class="tag tgr">📦 택배 가능</span><span class="tag tgr">📌 서울 마포</span></div>
+            <div class="feed-bottom"><div style="font-size:10px;color:var(--text-hint);margin-left:auto;">❤ 12</div></div>
+          </div>
+        </a>
+        <a class="feed-item" href="product-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:#E24B4A;color:white;">D-5</div></div>
+          <div class="feed-info">
+            <div class="feed-title">신선 유제품</div>
+            <div class="feed-meta"><span>서울우유협동조합</span><div class="meta-dot"></div><span>3시간 전</span></div>
+            <div class="feed-qty">300개 · 약 90만원</div>
+            <div class="feed-tags"><span class="tag tgr">🥛 유제품</span><span class="tag tb">🌡 냉장 필요</span><span class="tag tgr">📍 방문 픽업</span><span class="tag tgr">📌 서울 성북</span></div>
+            <div class="feed-bottom"><div style="font-size:10px;color:var(--text-hint);margin-left:auto;">❤ 9</div></div>
+          </div>
+        </a>
+        <a class="feed-item" href="product-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:#F5C800;color:#1B4332;">D-7</div></div>
+          <div class="feed-info">
+            <div class="feed-title">아이스크림</div>
+            <div class="feed-meta"><span>벤엔제리스 코리아</span><div class="meta-dot"></div><span>2일 전</span></div>
+            <div class="feed-qty">54kg · 7,200만원</div>
+            <div class="feed-tags"><span class="tag tgr">🍦 가공 식품</span><span class="tag tb">❄ 냉동 필요</span><span class="tag tgr">📍 방문 픽업</span><span class="tag tgr">📌 서울 강남</span></div>
+            <div class="feed-bottom"><div style="font-size:10px;color:var(--text-hint);margin-left:auto;">❤ 24</div></div>
+          </div>
+        </a>
+        <a class="feed-item" href="product-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:rgba(0,0,0,0.45);color:white;">D-90</div></div>
+          <div class="feed-info">
+            <div class="feed-title">사무용 의자</div>
+            <div class="feed-meta"><span>OrgSolutions</span><div class="meta-dot"></div><span>3일 전</span></div>
+            <div class="feed-qty">20개 · 약 400만원</div>
+            <div class="feed-tags"><span class="tag tgr">🪑 가구</span><span class="tag tgr">🚚 직접 전달</span><span class="tag tgr">📌 서울 중구</span></div>
+            <div class="feed-bottom"><div style="font-size:10px;color:var(--text-hint);margin-left:auto;">❤ 2</div></div>
+          </div>
+        </a>
+      </div>
+      <div class="fab-wrap">
+        <a class="fab" href="my-donations.html">＋ 기부 등록</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 필요해요 패널 -->
+  <div data-tab-panel="need" data-tab-group-panel="home" class="hidden" style="display:flex;flex-direction:column;flex:1;overflow:hidden;">
+    <div class="search-bar">🔍&nbsp; 어떤 물품이 필요하신가요?</div>
+    <div class="sort-row">
+      <div style="font-size:10px;color:var(--text-hint);">전체 8건</div>
+      <button class="sort-btn">긴급순 ▾</button>
+    </div>
+    <div class="feed-wrap">
+      <div class="feed-list">
+        <a class="feed-item" href="need-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:#E24B4A;color:white;">D-3</div></div>
+          <div class="feed-info">
+            <div class="feed-title">급식용 식품</div>
+            <div class="feed-meta"><span>🏫 보라매 아동센터</span><div class="meta-dot"></div><span>1시간 전</span></div>
+            <div class="feed-qty">필요량 30kg</div>
+            <div style="font-size:10px;color:var(--text-sub);">수혜자 50명</div>
+            <div class="feed-tags"><span class="tag tgr">🥗 신선 식품</span><span class="tag tg">🏫 아동</span><span class="tag tgr">📌 서울 동작</span></div>
+          </div>
+        </a>
+        <a class="feed-item" href="need-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:#F5C800;color:#1B4332;">D-14</div></div>
+          <div class="feed-info">
+            <div class="feed-title">겨울 의류</div>
+            <div class="feed-meta"><span>🏠 인천 보라매 쉼터</span><div class="meta-dot"></div><span>3시간 전</span></div>
+            <div class="feed-qty">필요량 100벌</div>
+            <div style="font-size:10px;color:var(--text-sub);">수혜자 30명</div>
+            <div class="feed-tags"><span class="tag tgr">👕 의류</span><span class="tag tb">🏠 노숙인지원</span><span class="tag tgr">📌 인천 남동</span></div>
+          </div>
+        </a>
+        <a class="feed-item" href="need-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:rgba(0,0,0,0.45);color:white;">D-30</div></div>
+          <div class="feed-info">
+            <div class="feed-title">한국어 학습 교재·도서</div>
+            <div class="feed-meta"><span>🌏 드림시티 다문화센터</span><div class="meta-dot"></div><span>1일 전</span></div>
+            <div class="feed-qty">필요량 200권</div>
+            <div style="font-size:10px;color:var(--text-sub);">수혜자 40명</div>
+            <div class="feed-tags"><span class="tag tgr">📚 도서</span><span class="tag ty">🌏 다문화</span><span class="tag tgr">📌 서울 구로</span></div>
+          </div>
+        </a>
+        <a class="feed-item" href="need-detail.html">
+          <div class="feed-thumb" style="background:#D9D9D9;"><div class="thumb-dday" style="background:#F5C800;color:#1B4332;">D-21</div></div>
+          <div class="feed-info">
+            <div class="feed-title">세면·위생용품 세트</div>
+            <div class="feed-meta"><span>🏘 로뎀나무 복지관</span><div class="meta-dot"></div><span>2일 전</span></div>
+            <div class="feed-qty">필요량 50세트</div>
+            <div style="font-size:10px;color:var(--text-sub);">수혜자 50명</div>
+            <div class="feed-tags"><span class="tag tgr">🛒 생활용품</span><span class="tag tgr">👴 노인복지</span><span class="tag tgr">📌 서울 성북</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="fab-wrap">
+        <a class="fab" href="my-donations.html">＋ 요청 등록</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a class="nav-item active" href="index.html"><div class="nav-icon-wrap">🏠</div><div class="nav-label">홈</div></a>
+    <a class="nav-item" href="my-donations.html"><div class="nav-icon-wrap">📦</div><div class="nav-label">내 기부</div></a>
+    <a class="nav-item" href="chat-list.html"><div class="nav-icon-wrap">💬<div class="notif-badge">3</div></div><div class="nav-label">채팅</div></a>
+    <a class="nav-item" href="esg.html"><div class="nav-icon-wrap">📊</div><div class="nav-label">리포트</div></a>
+    <a class="nav-item" href="profile.html"><div class="nav-icon-wrap">👤</div><div class="nav-label">내 정보</div></a>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
